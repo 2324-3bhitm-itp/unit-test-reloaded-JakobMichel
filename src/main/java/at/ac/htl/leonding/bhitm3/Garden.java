@@ -5,10 +5,13 @@ import java.util.List;
 
 public class Garden {
 
+    private static int idCounter = 0;
+
     private List plants = new LinkedList<>();
+    private int id;
 
     public Garden() {
-
+        id = idCounter++;
     }
 
     public List getPlants() {
@@ -17,6 +20,10 @@ public class Garden {
 
     public void addPlant(Plant plant) {
         plants.add(plant);
+    }
+
+    public int getId() {
+        return id;
     }
     
 }

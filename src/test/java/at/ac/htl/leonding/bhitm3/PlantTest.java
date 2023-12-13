@@ -18,6 +18,10 @@ public class PlantTest {
         assertEquals(null, plant.getName());
         assertEquals(null, plant.getType());
         assertEquals(0, plant.getWaterDemandIndicator());
-        
+
+        Plant plant2 = new Plant("name", PlantType.FLOWER, 1);
+        assertEquals("name", plant2.getName());
+        assertEquals(PlantType.FLOWER, plant2.getType());
+        assertEquals(1, plant2.getWaterDemandIndicator());
     }
 }

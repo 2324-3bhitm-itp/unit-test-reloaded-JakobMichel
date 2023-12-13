@@ -26,4 +26,13 @@ public class Plant {
     public int getWaterDemandIndicator() {
         return waterDemandIndicator;
     }
+
+    public void water() {
+        waterDemandIndicator = 0;
+    }
+
+    public int increaseWaterDemandIndicator(int amount) {
+        this.waterDemandIndicator += amount;
+        return waterDemandIndicator;
+    }
 }
